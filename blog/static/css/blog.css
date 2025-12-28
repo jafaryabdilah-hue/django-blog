@@ -1,71 +1,119 @@
+/* =========================
+   GLOBAL STYLE
+========================= */
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
 .page-header {
-    background-color: #C25100;
-    margin-top: 0;
-    margin-bottom: 40px;
-    padding: 20px 20px 20px 40px;
+    background: linear-gradient(135deg, #C25100, #ff8c42);
+    margin: 0;
+    padding: 30px 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 .page-header h1,
-.page-header h1 a,
-.page-header h1 a:visited,
-.page-header h1 a:active {
+.page-header h1 a {
     color: #ffffff;
-    font-size: 36pt;
+    font-size: 40px;
     text-decoration: none;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
-h1,
-h2,
-h3,
-h4 {
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 
 .date {
-    color: #828282;
+    color: #999;
+    font-size: 14px;
 }
 
-.save {
-    float: right;
-}
-
-.post-form textarea,
-.post-form input {
-    width: 100%;
-}
-
-.top-menu,
-.top-menu:hover,
-.top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
+/* =========================
+   POST CARD
+========================= */
 .post {
-    margin-bottom: 70px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
 }
 
-.post h2 a,
-.post h2 a:visited {
-    color: #000000;
+.post:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
+.post h2 a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.post h2 a:hover {
+    color: #C25100;
+}
+
+/* =========================
+   ACTION & META
+========================= */
 .post > .date,
 .post > .actions {
     float: right;
 }
 
-.btn-secondary,
-.btn-secondary:visited {
+/* =========================
+   FORM
+========================= */
+.post-form textarea,
+.post-form input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+/* =========================
+   MENU
+========================= */
+.top-menu,
+.top-menu:hover {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.top-menu:hover {
+    transform: scale(1.15);
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-secondary {
     color: #C25100;
-    background: none;
-    border-color: #C25100;
+    background: transparent;
+    border: 2px solid #C25100;
+    border-radius: 30px;
+    padding: 8px 18px;
     margin-left: 15px;
+    transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-    color: #FFFFFF;
-    background-color: #C25100;
+    color: #ffffff;
+    background: linear-gradient(135deg, #C25100, #ff8c42);
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(194,81,0,0.4);
 }
